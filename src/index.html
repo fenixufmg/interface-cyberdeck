@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="../public/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+  <title>Interface Cyberdeck 💻</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+  <main>
+      <div class="container-medidores">
+        <div class="coluna">
+          <div class="quadrado">
+            <h3>Acelerômetro</h3>
+            <div id="acelerometro"></div>
+          </div>
+          <div class="quadrado">
+            <h3>Altímetro</h3>
+            <div id="altimetro"></div>
+          </div>
+        </div>
+        <div class="coluna">
+          <div class="quadrado">
+            <h3>Giroscópio</h3>
+            <div id="giroscopio"></div>
+          </div>
+          <div class="quadrado">
+            <h3>Velocímetro</h3>
+            <div id="velocimetro"></div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container-mapa">
+      <h3>Localização</h3>
+      <div id="map"></div>
+    </div>
+
+
+    <div class="container-log">
+      <div class="log">
+        <h3>Log:</h3>
+        <p>
+          2024–11–18 20:18:29,467 [INFO] distributedConsensus.LeaderCandidate
+          Participated to a new round of number 13 with rank as 263
+        </p>
+        <p>
+          2024–11–18 20:18:29,467 [INFO] distributedConsensus.LeaderCandidate
+          Participated to a new round of number 13 with rank as 263
+        </p>
+        <p>
+          2024–11–18 20:18:29,467 [INFO] distributedConsensus.LeaderCandidate
+          Participated to a new round of number 13 with rank as 263
+        </p>
+        <p>
+          2024–11–18 20:18:29,467 [INFO] distributedConsensus.LeaderCandidate
+          Participated to a new round of number 13 with rank as 263
+        </p>
+        <p>
+          2024–11–18 20:18:29,467 [INFO] distributedConsensus.LeaderCandidate
+          Participated to a new round of number 13 with rank as 263
+        </p>
+        <p>
+          2024–11–18 20:18:29,467 [INFO] distributedConsensus.LeaderCandidate
+          Participated to a new round of number 13 with rank as 263
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="/src/plotaGrafico.js" type="module"></script>
+  <script src="/src/map.js" type="module"></script>
+
+</body>
+
+</html>

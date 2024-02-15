@@ -1,44 +1,20 @@
 {
   "name": "interface-cyberdeck",
-  "version": "0.1.0",
-  "private": true,
+  "homepage": "./",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/fenixufmg/interface-cyberdeck.git",
+  "author": "Igor Martins <iguinhoigor4@gmail.com>",
+  "license": "MIT",
+  "private": false,
   "devDependencies": {
-    "electron": "^1.4.14",
-    "react-scripts": "0.8.5"
+    "electron": "^28.2.3"
+  },
+  "scripts": {
+    "dev": "electron ."
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "main": "src/electron-starter.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "electron": "electron ."
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "axios": "^1.6.7",
+    "chart.js": "^4.4.1"
   }
 }
