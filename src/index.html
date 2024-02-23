@@ -15,6 +15,9 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.bundle.min.js"></script>
 
   <title>Interface Cyberdeck 💻</title>
 </head>
@@ -24,34 +27,33 @@
 
 
   <main>
-      <div class="container-medidores">
-        <div class="coluna">
-          <div class="quadrado">
-            <h3>Acelerômetro</h3>
-            <div id="acelerometro"></div>
-          </div>
-          <div class="quadrado">
-            <h3>Altímetro</h3>
-            <div id="altimetro"></div>
-          </div>
+    <div class="container-medidores">
+      <div class="coluna">
+        <div class="quadrado">
+          <h3>Acelerômetro</h3>
+          <div class="grafico" id="acelerometroChart"></div>
         </div>
-        <div class="coluna">
-          <div class="quadrado">
-            <h3>Giroscópio</h3>
-            <div id="giroscopio"></div>
-          </div>
-          <div class="quadrado">
-            <h3>Velocímetro</h3>
-            <div id="velocimetro"></div>
-          </div>
+        <div class="quadrado">
+          <h3>Altímetro</h3>
+          <div class="grafico" id="altimetroChart"></div>
         </div>
       </div>
+      <div class="coluna">
+        <div class="quadrado">
+          <h3>Giroscópio</h3>
+          <div class="grafico" id="giroscopioChart"></div>
+        </div>
+        <div class="quadrado">
+          <h3>Velocímetro</h3>
+          <div class="grafico" id="velocimetroChart"></div>
+        </div>
+      </div>
+    </div>
 
     <div class="container-mapa">
       <h3>Localização</h3>
       <div id="map"></div>
     </div>
-
 
     <div class="container-log">
       <div class="log">
@@ -84,8 +86,8 @@
     </div>
   </main>
 
-  <script src="/src/plotaGrafico.js" type="module"></script>
-  <script src="/src/map.js" type="module"></script>
+  <script src="plotaGrafico.js" type="module"></script>
+  <script src="map.js" type="module"></script>
 
 </body>
 

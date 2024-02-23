@@ -63,6 +63,10 @@ main {
   border-radius: 16px;
 }
 
+canvas {
+  padding: 2rem 0;
+}
+
 .container-mapa {
   width: 36.3rem;
 
